@@ -12,6 +12,6 @@ Steps to reproduce:
 
 
 Notes:
-I ran several of these simultaneously and saw 1 fail and the other one not, so I don't believe its a network hiccup
+I ran several of these simultaneously and saw 1 hang and the other one not, so I don't believe its a network hiccup
 
 To continue isolating the problem I'm going to try and get this repository as small as possible... going to start by removing index.js+commands.js code, see if i can repro and go from there. 
