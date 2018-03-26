@@ -1,0 +1,24 @@
+{
+  "name": "matchertests",
+  "version": "1.0.0",
+  "description": "matcher tests for the switch web app",
+  "author": "Cameron Cooks",
+  "scripts": {
+    "test": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config_for_reporters.json --browser chrome --env configFile=dev",
+    "live-sites": "extelenium --extension extension/dev/switch_extension/dist/extension-dev/chrome/ --wdio-config wdio.conf.js",
+    "cypress:run:dev": "cypress run --browser chrome --reporter mocha-multi-reporters --reporter-options configFile=config_for_reporters.json --env configFile=dev",
+    "cypress:run:test": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config_for_reporters.json --browser chrome --record --key 5375ae6a-55ac-45ca-8bcd-8b9c4f89c5fa --env configFile=test",
+    "cypress:run:staging": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config_for_reporters.json --browser chrome --record --key 5375ae6a-55ac-45ca-8bcd-8b9c4f89c5fa --env configFile=staging",
+    "cypress:run:prod": "cypress run --reporter mocha-multi-reporters --reporter-options configFile=config_for_reporters.json --browser chrome --record --key 5375ae6a-55ac-45ca-8bcd-8b9c4f89c5fa --env configFile=production"
+  },
+  "dependencies": {
+    "cypress": "^2.1.0",
+    "fibers": "^2.0.0",
+    "fs": "^0.0.1-security",
+    "mocha": "3",
+    "mochawesome": "1.5.3",
+    "s3": "^4.4.0",
+    "selenium-standalone": "^6.12.0",
+    "shelljs": "^0.7.8"
+  }
+}

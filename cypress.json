@@ -1,0 +1,11 @@
+{
+    "videoRecording": false,
+    "reporter": "mochawesome",
+    "integrationFolder": "tests",
+    "supportFile": "index.js",
+    "projectId": "tmsktt",
+    "chromeWebSecurity": false,
+    "numTestsKeptInMemory": 5,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
+}
