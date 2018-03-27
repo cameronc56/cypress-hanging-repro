@@ -14,6 +14,6 @@ Steps to reproduce:
 
 
 Notes:
-I ran several of these simultaneously and saw 1 hang and the other one not, so I don't believe its a network hiccup
+I ran several of these simultaneously and saw 1 hang and the other one didnt, so I don't believe its a network hiccup
 
 To continue isolating the problem I'm going to try and get this repository as small as possible, removing code and attempting to repro. 
