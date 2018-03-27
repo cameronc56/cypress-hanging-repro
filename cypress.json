@@ -1,6 +1,5 @@
 {
     "videoRecording": false,
-    "reporter": "mochawesome",
     "integrationFolder": "tests",
     "supportFile": "index.js",
     "projectId": "tmsktt",
