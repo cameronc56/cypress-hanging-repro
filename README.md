@@ -6,7 +6,7 @@ Steps to reproduce:
 
 1. docker build --no-cache -t test/example-repro .
 
-2. docker run -it -v /dev/shm:/dev/shm --ipc=host --security-opt seccomp:unconfined --rm test/example-repro:latest /bin/bash 
+2. docker run -it --shm-size=2g --ipc=host --security-opt seccomp:unconfined --rm test/example-repro:latest /bin/bash 
 
 3. ./node_modules/.bin/cypress run --browser chrome (inside the container)
 
