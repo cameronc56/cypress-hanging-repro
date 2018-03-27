@@ -4,7 +4,7 @@ The bug: https://github.com/cypress-io/cypress/issues/1479
 
 Steps to reproduce:
 
-1. /bin/bash build_docker.sh
+1. docker build --no-cache -t test/example-repro .
 
 2. docker run -it -v /dev/shm:/dev/shm --ipc=host --security-opt seccomp:unconfined --rm test/example-repro:latest /bin/bash 
 
