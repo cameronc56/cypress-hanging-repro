@@ -1,7 +1,6 @@
 {
     "videoRecording": false,
     "integrationFolder": "tests",
-    "supportFile": "index.js",
     "projectId": "tmsktt",
     "chromeWebSecurity": false,
     "numTestsKeptInMemory": 5,
