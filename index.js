@@ -14,7 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands';
+//import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
@@ -25,19 +25,19 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 
 // https://github.com/cypress-io/cypress/issues/992
-Cypress.on('window:before:load', win => {
-    Object.defineProperty(win, 'self', {
-        get: () => {
-            return window.top
-        }
-    })
-});
+//Cypress.on('window:before:load', win => {
+//    Object.defineProperty(win, 'self', {
+//        get: () => {
+//            return window.top
+//        }
+//    })
+//});
 
-Cypress.on('window:load', win => {
-    Object.defineProperty(win, 'self', {
-        get: () => {
-            return window.top
-        }
-    })
-});
+//Cypress.on('window:load', win => {
+//    Object.defineProperty(win, 'self', {
+//        get: () => {
+//            return window.top
+//        }
+//    })
+//});
 
